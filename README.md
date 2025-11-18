@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python Flask - Demo Web Application
 
 This is a simple Python Flask web application. The app provides system information and a realtime monitoring screen with dials showing CPU, memory, IO and process information.
@@ -109,3 +110,6 @@ make deploy
 ## Running in Azure App Service (Windows)
 
 Just don't, it's awful
+=======
+# python-demoapp-monitoring
+>>>>>>> 51f4f0e94fe835e9e198c6d3a05332bd2fe808b0
