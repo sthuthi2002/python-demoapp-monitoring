@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
+  name: monitorapp-service
   labels:
     app: monitorapp
-  name: pythonmonitor
 spec:
   type: NodePort
-  ports:
-    - port: 5000
-      targetPort: 5000
-      protocol: TCP
   selector:
     app: monitorapp
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 31139   # keep same assigned port
