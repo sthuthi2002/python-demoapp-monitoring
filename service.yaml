@@ -6,10 +6,9 @@ metadata:
     app: monitorapp
 spec:
   type: NodePort
+  ports:
+    - port: 5000
+      targetPort: 5000
+      protocol: TCP
   selector:
     app: monitorapp
-  ports:
-    - protocol: TCP
-      port: 5000
-      targetPort: 5000
-      nodePort: 31139   # keep same assigned port
